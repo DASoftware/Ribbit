@@ -2,12 +2,16 @@
 <manifest package="gr.dasoftware.ribbit"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".RibbitApplication">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -29,6 +33,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="gr.dasoftware.ribbit.LoginActivity"/>
         </activity>
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="x9WkmOuuMrBwosvPl70mJCJkG1l9aFoATARwr0z9" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="MhswhGhQWC4w9qBUBXhgJZpEI2jva92CasC4djHO" />
     </application>
 
 </manifest>
